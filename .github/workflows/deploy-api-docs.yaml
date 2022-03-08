@@ -4,10 +4,12 @@ on:
   pull_request:
     types:
       - closed
+    branches:
+      - 'releases-api-docs'
 
 jobs:
   if_merged:
-    if: github.event.pull_request.merged == tru
+    if: github.event.pull_request.merged == true
     permissions:
       contents: write
 
