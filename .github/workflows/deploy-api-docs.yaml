@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - 'releases-api-docs'
+      - 'release-api-docs'
 
 jobs:
   if_merged:
