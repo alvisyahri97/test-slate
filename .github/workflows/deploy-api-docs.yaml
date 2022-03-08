@@ -5,7 +5,9 @@ on:
     types:
       - closed
     branches:
-      - 'release-api-docs'
+      - 'main'
+    paths:
+      - 'docs-source/**'
 
 jobs:
   if_merged:
@@ -46,5 +48,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: release-api-docs
-          destination_dir: docs
-          keep_files: true
